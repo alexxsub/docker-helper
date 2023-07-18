@@ -3,7 +3,7 @@ services:
   influxdb:
     image: influxdb:latest
     ports:
-      - '8086:8086'
+      - '86:8086'
     volumes:
       - influxdb-data:/var/lib/influxdb
     environment:
@@ -15,7 +15,7 @@ services:
     ports:
       - '127.0.0.1:8888:8888'
     volumes:
-      - chronograf-data:/var/lib/chronograf
+      - ./chronograf-data:/var/lib/chronograf
     depends_on:
       - influxdb
     environment:
@@ -25,9 +25,9 @@ services:
   grafana:
     image: grafana/grafana:latest
     ports:
-      - '3000:3000'
+      - '3001:3000'
     volumes:
-      - grafana-data:/var/lib/grafana
+      - ./grafana-data:/var/lib/grafana
       - ./grafana-provisioning/:/etc/grafana/provisioning
     depends_on:
       - influxdb

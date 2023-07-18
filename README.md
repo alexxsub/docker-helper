@@ -57,11 +57,18 @@ $ docker-compose -f mysql.yml up -d
 http://localhost:81 - WEB клиент phpmyadmin
 
 
-## [Clickhouse](https://clickhouse.com) 
+## [ClickHouse](https://clickhouse.com) 
 ```
 $ docker-compose -f clickhouse.yml up -d
 ```
 http://localhost:85 - WEB клиент ClickHouse
+
+## [InfluxDB](https://www.influxdata.com/) + [Grafana](https://grafana.com/)
+```
+$ docker-compose -f influxdb.yml up -d
+```
+http://localhost:86 WEB клиент InfluxDB http://localhost:3001  Grafana
+
 
 ## [Redis](https://redis.io/)
 ```
