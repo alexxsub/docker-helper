@@ -4,31 +4,35 @@
 
 Ставим [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
+Клонируем этот репозиторий
+```
+$ git clone https://github.com/alexxsub/docker-helper.git
+```
 
 # Основные команды
 удалить контейнер
 ```
-docker-compose rm -v <имя контейнера>
+$ docker-compose rm -v <имя контейнера>
 ```
 показать логи в консоль
 ```
-docker-compose logs <имя контейнера>
+$ docker-compose logs <имя контейнера>
 ```
 скачать образы и запустить контейнеры
 ```
-docker-compose -f <имя yml> up -d
+$ docker-compose -f <имя yml> up -d
 ```
 остановить контейнеры
 ```
-docker-compose -f <имя yml> down
+$ docker-compose -f <имя yml> down
 ```
 остановить контейнер
 ```
-docker-compose stop <имя контейнера>
+$ docker-compose stop <имя контейнера>
 ```
 запустить контейнер
 ```
-docker-compose up <имя контейнера>
+$ docker-compose up <имя контейнера>
 ```
 
 # Запуск web сервера на базе [nginx](https://nginx.org/ru/)
