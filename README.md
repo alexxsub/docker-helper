@@ -38,11 +38,11 @@ $ docker-compose -f nginx.yml up -d
 ```
 
 # Запуск различных баз данных
-## [MongoDB](https://www.mongodb.com/)
+## [MySQL](https://www.postgresql.org/)
 ```
-$ docker-compose -f mongodb.yml up -d
+$ docker-compose -f mysql.yml up -d
 ```
-http://localhost:84 - WEB клиент Mongo Express
+http://localhost:81 - WEB клиент phpmyadmin
 
 ## [PostgreSQL](https://www.postgresql.org/)
 ```
@@ -50,12 +50,12 @@ $ docker-compose -f postgre.yml up -d
 ```
 http://localhost:82 - WEB клиент PGadmin
 
-## [MySQL](https://www.postgresql.org/)
-```
-$ docker-compose -f mysql.yml up -d
-```
-http://localhost:81 - WEB клиент phpmyadmin
 
+## [MongoDB](https://www.mongodb.com/)
+```
+$ docker-compose -f mongodb.yml up -d
+```
+http://localhost:84 - WEB клиент Mongo Express
 
 ## [ClickHouse](https://clickhouse.com) 
 ```
