@@ -1,8 +1,8 @@
-# Примеры запуска различных СУБД и инструментов в контенерах
+# Примеры запуска различных СУБД и инструментов в контейнерах
 
 ## Установка
 
-[Docker Desktop](https://www.docker.com/products/docker-desktop/)
+Ставим [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
 
 # Основные команды
