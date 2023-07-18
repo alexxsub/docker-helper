@@ -2,7 +2,7 @@
 
 ## Установка
 
-[Docker Descktop] (https://www.docker.com/products/docker-desktop/)
+[Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
 
 # Основные команды
