@@ -10,7 +10,7 @@ services:
     volumes:
        - postgres-data:/data/postgres:rw
     ports:
-      - '5432:5432'
+      - 5432:5432
     networks:
       - postgres
     restart: unless-stopped

@@ -9,9 +9,9 @@ services:
       MYSQL_USER: ${MYSQL_USER:-admin}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD:-admin}
     ports:
-      - "6033:3306"
+      - 6033:3306
     volumes:
-      - 'mysql-data:/var/lib/mysql'
+      - mysql-data:/var/lib/mysql
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: PHPmyAdmin
