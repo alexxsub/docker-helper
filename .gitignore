@@ -1,0 +1,8 @@
+mongo-data
+nginx-log
+clickhouse-data
+influxdb-data
+chronograf-data
+grafana-data
+mysql-data
+redis-data
