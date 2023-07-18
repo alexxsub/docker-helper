@@ -8,11 +8,11 @@
 # Основные команды
 удалить контейнер
 ```
-docker-compose rm -v <имя контенера>
+docker-compose rm -v <имя контейнера>
 ```
 показать логи в консоль
 ```
-docker-compose logs <имя контенера>
+docker-compose logs <имя контейнера>
 ```
 скачать образы и запустить контейнеры
 ```
@@ -24,11 +24,11 @@ docker-compose -f <имя yml> down
 ```
 остановить контейнер
 ```
-docker-compose stop <имя контенера>
+docker-compose stop <имя контейнера>
 ```
 запустить контейнер
 ```
-docker-compose up <имя контенера>
+docker-compose up <имя контейнера>
 ```
 
 # Запуск web сервера на базе [nginx](https://nginx.org/ru/)
