@@ -6,3 +6,4 @@ chronograf-data
 grafana-data
 mysql-data
 redis-data
+clickhouse
