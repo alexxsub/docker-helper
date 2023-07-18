@@ -3,7 +3,8 @@ nginx-log
 clickhouse
 influxdb-data
 chronograf-data
-grafana-data
+postgres-data
 mysql-data
-redis-data
 clickhouse
+grafana
+redis-data

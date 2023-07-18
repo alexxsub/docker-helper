@@ -5,18 +5,18 @@ services:
     ports:
       - 27017:27017
     volumes:
-      - './mongo-data:/data/db'
+      - mongo-data:/data/db
   mongo-express:
     image: mongo-express
     container_name: mongo-express
     environment:
         - ME_CONFIG_MONGODB_SERVER=mongodb
         - ME_CONFIG_MONGODB_PORT=27017
-        - ME_CONFIG_MONGODB_ENABLE_ADMIN=false
-        - ME_CONFIG_MONGODB_AUTH_DATABASE=admin
+        # - ME_CONFIG_MONGODB_ENABLE_ADMIN=false
+        # - ME_CONFIG_MONGODB_AUTH_DATABASE=admin
     depends_on:
         - mongodb
     ports:
-      - "8084:8081"
+      - 84:8081
 volumes:
   mongo-data:

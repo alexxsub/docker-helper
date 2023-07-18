@@ -4,17 +4,17 @@ services:
     image: yandex/clickhouse-server
     ports:
       - '8123:8123'
-      - '85:9000'
+      - '9000:9000'
     volumes:
-      - ./clickhouse/data:/var/lib/clickhouse
-      - ./clickhouse/rollup.xml:/etc/clickhouse-server/config.d/rollup.xml
-      - ./clickhouse/init.sql:/docker-entrypoint-initdb.d/init.sql
-      - ./clickhouse/logs/clickhouse-server:/log/clickhouse-server
-      - ./clickhouse/config/clickhouse/config.xml:/etc/clickhouse-server/config.xml
-      - ./clickhouse/config/clickhouse/users.xml:/etc/clickhouse-server/users.xml
-      - ./clickhouse/config/clickhouse/users.d:/etc/clickhouse-server/users.d
+      - clickhouse-data:/var/lib/clickhouse
+      # - ./clickhouse/rollup.xml:/etc/clickhouse-server/config.d/rollup.xml
+      # - ./clickhouse/init.sql:/docker-entrypoint-initdb.d/init.sql
+      # - ./clickhouse/logs/clickhouse-server:/log/clickhouse-server
+      # - ./clickhouse/config/clickhouse/config.xml:/etc/clickhouse-server/config.xml
+      # - ./clickhouse/config/clickhouse/users.xml:/etc/clickhouse-server/users.xml
+      # - ./clickhouse/config/clickhouse/users.d:/etc/clickhouse-server/users.d
     networks:
-        - ch_ntw
+        - clickhouse-network
 
   clickhouse-client:
     image: yandex/clickhouse-client
@@ -24,6 +24,14 @@ services:
       - infinity
     networks:
         - clickhouse-network
+  tabix-gui:
+    image: spoonest/clickhouse-tabix-web-client
+    container_name: tabix-gui
+    networks:
+      - clickhouse-network
+    ports:
+      - 85:80 # http ui tabix.io
+
 volumes:
   clickhouse-data:
 networks:

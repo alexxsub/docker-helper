@@ -61,7 +61,8 @@ http://localhost:84 - WEB клиент Mongo Express
 ```
 $ docker-compose -f clickhouse.yml up -d
 ```
-http://localhost:85 - WEB клиент ClickHouse
+http://localhost:85 - WEB клиент tabix (user:default/pass:'')
+http://localhost:8123/play простой WEB клиент
 
 ## [InfluxDB](https://www.influxdata.com/) + [Grafana](https://grafana.com/)
 ```

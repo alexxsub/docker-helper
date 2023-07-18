@@ -5,6 +5,6 @@ services:
     ports:
       - '80:80'
     volumes:
-      - ./app:/var/www/html
+      - ./app:/var/www/html:rw
       - ./nginx-config:/etc/nginx/conf.d
-      - ./nginx-log:/var/log/nginx/
+      - ./nginx-log:/var/log/nginx/:rw
