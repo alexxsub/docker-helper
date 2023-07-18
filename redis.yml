@@ -18,4 +18,4 @@ services:
     environment:
     - REDIS_HOSTS=local:redis:6379
     ports:
-    - "8083:8081"
+    - '83:8081'

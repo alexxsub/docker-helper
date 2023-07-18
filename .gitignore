@@ -1,6 +1,6 @@
 mongo-data
 nginx-log
-clickhouse-data
+clickhouse
 influxdb-data
 chronograf-data
 grafana-data

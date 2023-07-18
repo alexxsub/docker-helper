@@ -61,6 +61,7 @@ http://localhost:81 - WEB клиент phpmyadmin
 ```
 $ docker-compose -f clickhouse.yml up -d
 ```
+http://localhost:85 - WEB клиент ClickHouse
 
 ## [Redis](https://redis.io/)
 ```
