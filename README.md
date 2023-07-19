@@ -42,26 +42,26 @@ $ docker-compose -f nginx.yml up -d
 ```
 
 # Запуск различных баз данных
-## [MySQL](https://www.postgresql.org/)
+## [MySQL](https://www.postgresql.org/) [PHPMyadmin](https://www.phpmyadmin.net/)
 ```
 $ docker-compose -f mysql.yml up -d
 ```
 http://localhost:81 - WEB клиент phpmyadmin
 
-## [PostgreSQL](https://www.postgresql.org/)
+## [PostgreSQL](https://www.postgresql.org/) [PGAdmin](https://www.pgadmin.org/download/)
 ```
 $ docker-compose -f postgre.yml up -d
 ```
 http://localhost:82 - WEB клиент PGadmin
 
 
-## [MongoDB](https://www.mongodb.com/)
+## [MongoDB](https://www.mongodb.com/) [Mongo Express](https://github.com/mongo-express/mongo-express)
 ```
 $ docker-compose -f mongodb.yml up -d
 ```
 http://localhost:84 - WEB клиент Mongo Express
 
-## [ClickHouse](https://clickhouse.com) 
+## [ClickHouse](https://clickhouse.com) [Tabix](https://tabix.io/)
 ```
 $ docker-compose -f clickhouse.yml up -d
 ```
@@ -75,14 +75,14 @@ $ docker-compose -f influxdb.yml up -d
 http://localhost:86 WEB клиент InfluxDB http://localhost:3001  Grafana
 
 
-## [Redis](https://redis.io/)
+## [Redis](https://redis.io/) [Redis Commander](https://www.npmjs.com/package/redis-commander)
 ```
 $ docker-compose -f redis.yml up -d
 ```
 
 http://localhost:83 - WEB клиент
 
-
+### Некоторые дополнения конфигурации redis
 установка пароля
 ```
 services:
